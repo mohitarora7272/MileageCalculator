@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_slide_up_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mileagecalculator.fuelefficiency.ShowRecordsActivity"
+    tools:showIn="@layout/show_records">
+
+    <RelativeLayout
+        android:id="@+id/slideView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_up_corners_bg"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/slide_it_down"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/linearRecords"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_shape_tv"
+            android:layout_below="@+id/imageView"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vname"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vmodel"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vfuel_type"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vmileage_type"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vdate"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vreading"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vfuel"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vprice"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vavg"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/vprice_avg"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rVRecords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearRecords" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

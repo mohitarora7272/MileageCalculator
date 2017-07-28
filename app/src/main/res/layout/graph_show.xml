@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearUpper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/btn_Add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_more_vert_black_24dp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/share"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/graph"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btn_Add"
+                android:background="@drawable/ic_share_black_24dp"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:gravity="center"
+        tools:ignore="RtlHardcoded">
+
+        <Spinner
+            android:id="@+id/spinner_Graph"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            tools:ignore="NestedWeights,RtlHardcoded" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:maxLines="1"
+            android:text="@string/n_a"
+            android:textColor="@color/white"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/netavg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:maxLines="1"
+            android:text="@string/n_a"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_weight="11.5"
+        android:background="@drawable/custom_shape_tv"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/graph_Show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_InfoGraph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/date"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/avg"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:background="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/white" />
+
+        <ListView
+            android:id="@+id/lv_Graph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="22.5"
+        android:gravity="center|bottom">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer" />
+    </LinearLayout>
+
+</LinearLayout>

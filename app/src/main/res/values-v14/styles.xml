@@ -1,0 +1,50 @@
+<resources>
+
+    <!--
+           Base application theme, dependent on API level. This theme is replaced
+           by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+       -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">serif</item>
+        <!--<item name="android:windowAnimationStyle">@style/MyAnimation.Window</item>-->
+        <item name="android:windowBackground">@color/bglayout</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"/>
+
+    <style name="AppBaseThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppBaseThemeTabBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowBackground">@color/bglayout</item>
+    </style>
+</resources>

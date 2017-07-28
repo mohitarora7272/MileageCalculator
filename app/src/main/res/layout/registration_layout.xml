@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Registeration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/vehcle_registration"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_V_Name"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_shape_tv"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/v_name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textStyle="normal">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/edt_V_Model"
+            style="@style/AppBaseTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_shape_tv"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/model"
+            android:inputType="number"
+            android:maxLength="4"
+            android:padding="10dp"
+            android:textStyle="normal">
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_TypeTank"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/type_t"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/spnr_Tank"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_TypeViecle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/mileage"
+            android:textStyle="bold"
+            tools:ignore="NestedWeights" />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <Spinner
+            android:id="@+id/spnr_Mileage"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_Registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_shape_btn"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center|bottom">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_home_footer" />
+    </LinearLayout>
+
+</LinearLayout>

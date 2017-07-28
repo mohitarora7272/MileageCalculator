@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/mc_icon"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_image"
+        android:layout_centerInParent="true"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:typeface="serif"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

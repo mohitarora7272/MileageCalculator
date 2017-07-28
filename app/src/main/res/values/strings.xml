@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Mileage Calculator</string>
+    <string name="select">Select</string>
+    <string name="action_settings" tools:ignore="UnusedResources">Settings</string>
+    <string name="logout" tools:ignore="UnusedResources">LogOut</string>
+    <string name="hello_world" tools:ignore="UnusedResources">Hello world!</string>
+    <string name="submit">Calculate</string>
+    <string name="submited">Submit</string>
+    <string name="history" tools:ignore="UnusedResources">Show History</string>
+    <string name="show_on_list" tools:ignore="UnusedResources">Show On List</string>
+    <string name="price">Total Cost</string>
+    <string name="new_reading">Reading</string>
+    <string name="current_reading">Current Reading</string>
+    <string name="next_reading">Next Reading</string>
+    <string name="old_reading">Old Reading</string>
+    <string name="fuel">Fuel Quantity</string>
+    <string name="name" tools:ignore="UnusedResources">Enter Name</string>
+    <string name="v_name">Vehicle Name</string>
+    <string name="model">Vehicle Model</string>
+    <string name="make" tools:ignore="UnusedResources">Making Year</string>
+    <string name="vehclename" tools:ignore="UnusedResources">Enter Vehicle Name</string>
+    <string name="email" tools:ignore="UnusedResources">Enter Email</string>
+    <string name="password" tools:ignore="UnusedResources">Enter Password</string>
+    <string name="registration" tools:ignore="UnusedResources">Registration</string>
+    <string name="vehcle_registration">Vehicle Registration</string>
+    <string name="register">Register</string>
+    <string name="type_v" tools:ignore="UnusedResources">Type Of Vehicle</string>
+    <string name="mileage">Mileage in</string>
+    <string name="type_t">Fuel Type</string>
+    <string name="login" tools:ignore="UnusedResources">LogIn</string>
+    <string name="forgot_password" tools:ignore="UnusedResources">Forgot Password</string>
+    <string name="ok" tools:ignore="UnusedResources">OK</string>
+    <string name="date">Date</string>
+    <string name="new_read" tools:ignore="UnusedResources">New Reading</string>
+    <string name="fuel_alert" tools:ignore="UnusedResources">Fuel</string>
+    <string name="price_alert" tools:ignore="UnusedResources">Price</string>
+    <string name="avg_alert" tools:ignore="UnusedResources">Average(km/ltr)</string>
+    <string name="pavg_alert" tools:ignore="UnusedResources">Price Average(km/rs)</string>
+    <string name="show_average" tools:ignore="UnusedResources">Average List</string>
+    <string name="or" tools:ignore="UnusedResources">Or</string>
+    <string name="app_Id" tools:ignore="UnusedResources">675610892514767</string>
+    <string name="graph">Graph And Average View</string>
+    <string name="fuel_entry">Fuel Entry</string>
+    <string name="new_entry">Add New Vehicle</string>
+    <string name="sno" tools:ignore="UnusedResources">Sno.</string>
+    <string name="avg">Average</string>
+    <string name="service_entry">Service Entry</string>
+    <string name="static_entry">Reports</string>
+    <string name="show_records">Show All Records</string>
+    <string name="share">Share</string>
+    <string name="reports">Reports</string>
+    <string name="n_a">N/A</string>
+    <string name="expense_not_found">Expenses Not Found</string>
+    <string name="fuel_consumption_not_found">Fuel Consumption Not Found</string>
+    <string name="fuel_price_not_found">Fuel Price Not Found</string>
+    <string name="records_not_found">Records Not Found</string>
+    <string name="record_not_found">Record Not Found</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="delete">Delete</string>
+    <string name="show">Show Records</string>
+    <string name="slide_it_down">Slide it down</string>
+    <string name="vname">Name</string>
+    <string name="vmodel">Model</string>
+    <string name="vfuel_type">Fuel type</string>
+    <string name="vmileage_type">Mileage Type</string>
+    <string name="vdate">Date</string>
+    <string name="vreading">Reading</string>
+    <string name="vfuel">Fuel</string>
+    <string name="vprice">Price</string>
+    <string name="vavg">Avg.</string>
+    <string name="vprice_avg">Price Avg.</string>
+    <string name="in_liters">In Liters</string>
+
+    <!--Replaced with new adUnit Id-->
+    <string name="banner_home_footer">ca-app-pub-3104530433760081/3567409857</string>
+    <string name="interstitial_full_screen">ca-app-pub-3104530433760081/5044143059</string>
+
+</resources>
