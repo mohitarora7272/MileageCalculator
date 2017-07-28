@@ -10,6 +10,7 @@ import com.mileagecalculator.R;
 
 @SuppressWarnings("SameParameterValue")
 public class SplashActivity extends AppCompatActivity {
+
     private String id_shr;
     private boolean isFirstImage = true;
 
