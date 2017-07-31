@@ -127,7 +127,7 @@ public class FuelEntry extends AppCompatActivity implements OnClickListener {
         arrayList = new ArrayList<>();
         currentDate = sdf.format(new Date());
         tv_date.setText(currentDate);
-        //showBannerAd();
+        showBannerAd();
     }
 
     // Show Banner Ads

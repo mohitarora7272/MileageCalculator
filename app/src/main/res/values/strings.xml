@@ -73,8 +73,13 @@
     <string name="vprice_avg">Price Avg.</string>
     <string name="in_liters">In Liters</string>
 
-    <!--Replaced with new adUnit Id-->
-    <string name="banner_home_footer">ca-app-pub-3104530433760081/3567409857</string>
-    <string name="interstitial_full_screen">ca-app-pub-3104530433760081/5044143059</string>
+    <!-- iamdeveloper7272 email Replaced with new adUnit Id-->
+    <string name="banner_home_footer">ca-app-pub-7493083145656430/5511729445</string>
+    <string name="interstitial_full_screen">ca-app-pub-7493083145656430/1077660413</string>
+
+
+    <!-- aroraneha8650  email Replaced with new adUnit Id-->
+    <!--<string name="banner_home_footer">ca-app-pub-3104530433760081/3567409857</string>-->
+    <!--<string name="interstitial_full_screen">ca-app-pub-3104530433760081/5044143059</string>-->
 
 </resources>

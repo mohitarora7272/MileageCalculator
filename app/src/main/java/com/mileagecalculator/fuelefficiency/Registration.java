@@ -75,7 +75,7 @@ public class Registration extends AppCompatActivity implements OnClickListener, 
             return;
         }
         getDevideId();
-        //showBannerAd();
+        showBannerAd();
     }
 
     // Show Banner Ads

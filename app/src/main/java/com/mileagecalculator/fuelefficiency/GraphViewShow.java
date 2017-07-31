@@ -122,7 +122,7 @@ public class GraphViewShow extends AppCompatActivity implements OnClickListener,
             tv_Info.setText("Atlest Three Entries Required To View Graph");
         }
 
-        //showBannerAd();
+        showBannerAd();
     }
 
     // Show Banner Ads

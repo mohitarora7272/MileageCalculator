@@ -75,7 +75,7 @@ public class ShowRecordsActivity extends AppCompatActivity implements SampleAdap
                 })
         );
 
-        //showBannerAd();
+        showBannerAd();
     }
 
     // Show Banner Ads

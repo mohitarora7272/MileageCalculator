@@ -90,7 +90,7 @@ public class ServiceActivity extends AppCompatActivity implements OnClickListene
         sdf = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
         currentDate = sdf.format(new Date());
         tv_date.setText(currentDate);
-        //showBannerAd();
+        showBannerAd();
     }
 
     // Show Banner Ads
